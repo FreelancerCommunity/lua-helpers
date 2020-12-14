@@ -54,6 +54,7 @@ Convert["EulerToQuat"] = function (x, y, z)
     return result
 end
 
+-- Should be called in place of orient like this: orient  =  Convert.EulerToMatrix(x, y, z),
 
 Convert["EulerToMatrix"] = function (x, y, z)
 	local q = Convert.EulerToQuat(y, x, z)
